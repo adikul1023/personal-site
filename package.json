@@ -1,12 +1,11 @@
 {
   "name": "personal-site",
   "version": "4.0.0",
-  "homepage": "https://adi-kulkarni.in/",
+
   "homepage": "adi-kulkarni.in/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adikul1023/personal-site.git"
     "url": "https://github.com/adikul1023/personal-site.git"
   },
   "engines": {
