@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: 'Adi Kulkarni',
+    label: 'Adi_Kulkarni',
     path: '/',
   },
   {
