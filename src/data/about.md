@@ -23,7 +23,7 @@ In my spare time, I like to invest my energy in learning new things, particularl
 
 - Running
 - Chess
--cyceling
+- cyceling
 - Coding
 - Exploring random facts
 - Space
@@ -34,7 +34,7 @@ In my spare time, I like to invest my energy in learning new things, particularl
 # Fun Facts
 - I can solve rubics cube in under 2 minitues.
 - I can play chess well without ever learning it.
-- I one day randomly aproached my friend to make a website for his startup an I am now its CTO.
+- I one day randomly aproached my friend to make a website for his startup, and I am now its CTO.
 - I love coffee.
 
 # I Dream Of
