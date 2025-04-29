@@ -1,47 +1,45 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
+    title: 'HoneyCrypt',
     subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    image: '/images/projects/honeycrypt.png',
+    date: '2025-03-08',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      'Built out of curosity. '
+      + 'HoneyCrypt is a multi decoy Encryption alogrithm based on '
+      + '512-bit AES encryption. It uses a combination of '
+      + 'honeypot technology and the Universally accepted AES encryption.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
+    title: 'SecureVibe',
+    subtitle: 'A safety tool for Vibe-Coders',
     link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    image: '/images/projects/secure_vibe.png',
+    date: '2025-04-28',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+      'SecureVibe is a VS Code extension for "Vibe Coders" '
+      + 'which helps find vulnerabilities in codes generated using AI tools '
+      + 'and give suggestions and quick fixes.',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
+    title: 'Webscan',
+    subtitle: 'A Website Vunerabilities Scanner',
     link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
+    image: '/images/projects/webscan.jpg',
+    date: '2024-10-04',
     desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
+      'WebScan is a automated website vulnerability scanner which combines 50+ tools '
+      + 'using a single command. ',
   },
   {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
+    title: 'Portfolio.sh',
+    subtitle: 'A Terminal like website',
+    image: '/images/projects/portfolio.png',
+    date: '2025-02-09',
     desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'Portfolio.sh is a Terminal like portfolio website '
+      + 'created using TypeScript, Tailwind and NextJS ',
   },
 ];
 
