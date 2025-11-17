@@ -12,7 +12,7 @@ const data = [
     icon: faGithub,
   },
   {
-    link: 'https://www.instagram.com/adikul10234/',
+    link: 'https://www.instagram.com/adi_kulkarni1/',
     label: 'Instagram',
     icon: faInstagram,
   },
