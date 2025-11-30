@@ -51,6 +51,7 @@ const Vault = () => {
     e.preventDefault();
 
     if (!name.trim()) {
+      // eslint-disable-next-line no-alert
       alert('Please enter your name');
       return;
     }
@@ -60,12 +61,14 @@ const Vault = () => {
     try {
       // Hash the flag before sending
       const flagHash = await hashFlag(FLAG);
+      
+      console.log('Submitting to:', APPS_SCRIPT_URL);
+      console.log('Data:', { name: name.trim(), github: github.trim(), flagHash });
 
-      await fetch(APPS_SCRIPT_URL, {
+      const response = await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain',
         },
         body: JSON.stringify({
           name: name.trim(),
@@ -75,11 +78,16 @@ const Vault = () => {
         }),
       });
 
+      console.log('Response status:', response.status);
+      const result = await response.text();
+      console.log('Response:', result);
+
       setSubmitted(true);
       setSubmitting(false);
     } catch (error) {
       console.error('Submission error:', error);
       setSubmitting(false);
+      // eslint-disable-next-line no-alert
       alert('Submission successful! You will appear in the Hall of Fame soon.');
       setSubmitted(true);
     }
