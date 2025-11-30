@@ -8,7 +8,7 @@
     "url": "https://github.com/adikul1023/personal-site.git"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": "22.x"
   },
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
