@@ -16,8 +16,8 @@ const skills = [
   },
   {
     title: 'Amazon Web Services',
-    competency: 1,
-    category: ['Web Development', 'Tools'],
+    competency: 4,
+    category: ['Web Development', 'Tools', 'Cloud Security'],
   },
   {
     title: 'PostgreSQL/SQLite3/SQL/MySQL',
@@ -46,8 +46,8 @@ const skills = [
   },
   {
     title: 'AWS',
-    competency: 1,
-    category: ['Tools', 'Web Development'],
+    competency: 4,
+    category: ['Tools', 'Web Development', 'Cloud Security'],
   },
   {
     title: 'Docker',
@@ -90,6 +90,16 @@ const skills = [
     category: ['DevOps', 'System Administration', 'Cybersecurity'],
   },
   {
+    title: 'Kali Linux',
+    competency: 5,
+    category: ['Cybersecurity', 'Penetration Testing', 'System Administration'],
+  },
+  {
+    title: 'OWASP Top 10 / Web Security',
+    competency: 4,
+    category: ['Cybersecurity', 'Web Security', 'Penetration Testing'],
+  },
+  {
     title: 'VMware / VirtualBox',
     competency: 4,
     category: ['System Administration'],
@@ -97,37 +107,37 @@ const skills = [
   {
     title: 'Metasploit',
     competency: 4,
-    category: ['Cybersecurity', 'Penetration Testing', 'Red Teaming'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Tools'],
   },
   {
     title: 'Nmap',
     competency: 4,
-    category: ['Cybersecurity', 'Network Scanning', 'Reconnaissance'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Tools'],
   },
   {
     title: 'Wireshark',
     competency: 4,
-    category: ['Cybersecurity', 'Network Analysis', 'Packet Inspection'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Tools'],
   },
   {
     title: 'Burp Suite',
     competency: 4,
-    category: ['Cybersecurity', 'Web Application Testing', 'Penetration Testing'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Web Security'],
   },
   {
     title: 'John the Ripper / Hashcat',
     competency: 4,
-    category: ['Cybersecurity', 'Password Cracking', 'Red Teaming'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Tools'],
   },
   {
     title: 'Netcat',
     competency: 4,
-    category: ['Cybersecurity', 'Networking', 'Penetration Testing'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Tools'],
   },
   {
     title: 'OSINT tools (e.g., Maltego)',
     competency: 4,
-    category: ['Cybersecurity', 'OSINT', 'Reconnaissance'],
+    category: ['Cybersecurity', 'Penetration Testing', 'Tools'],
   },
   {
     title: 'TryHackMe / Hack The Box',

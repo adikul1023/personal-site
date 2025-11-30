@@ -6,11 +6,19 @@ import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
+import MatrixGlitch from '../components/Template/MatrixGlitch';
+import KonamiEgg from '../components/Template/KonamiEgg';
+import TerminalRedirect from '../components/Template/TerminalRedirect';
+import CTFHints from '../components/Template/CTFHints';
 
 const Main = (props) => (
   <HelmetProvider>
     <Analytics />
     <ScrollToTop />
+    <MatrixGlitch />
+    <KonamiEgg />
+    <TerminalRedirect />
+    <CTFHints />
     <Helmet
       titleTemplate="%s | Adi Kulkarni"
       defaultTitle="Adi Kulkarni"

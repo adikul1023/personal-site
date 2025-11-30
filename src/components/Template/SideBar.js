@@ -14,7 +14,7 @@ const SideBar = () => (
       <header>
         <h2>Adi Kulkarni</h2>
         <p>
-          <a href="mailto:adi@adi-kulkarni.in">adi.kulkarni@gmail.com</a>
+          <a href="mailto:adi@adi-kulkarni.in">adi@adi-kulkarni.in</a>
         </p>
       </header>
     </section>
@@ -23,9 +23,9 @@ const SideBar = () => (
       <h2>About</h2>
       <p>
         Hi, I&apos;m Adi. I am a{' '}
-        <a href="https://vitbhopal.ac.in/">VIT Bhopal University</a> student persuing B.Tech in Cybersecurity and Digital Forensics
+        <a href="https://vitbhopal.ac.in/">VIT Bhopal University</a> student pursuing B.Tech in Cybersecurity and Digital Forensics
         and the CTO of{' '}
-        <a href="astronauticinstitute.com">Astronautic Inst.</a>
+        <a href="https://astronauticinstitute.com">Astronautic Inst.</a>
       </p>
       <ul className="actions">
         <li>

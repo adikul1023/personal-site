@@ -47,3 +47,6 @@ build/
 
 # Nohup
 nohup.out
+
+# CTF Setup - Keep solution walkthrough private
+CTF_SETUP.md

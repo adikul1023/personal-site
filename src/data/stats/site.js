@@ -40,6 +40,12 @@ const data = [
     format: (x) => dayjs(x).format('MMMM DD, YYYY'),
   },
   {
+    label: 'Days since first commit',
+    key: 'created_at',
+    link: 'https://github.com/adikul1023/personal-site/commits',
+    format: (x) => dayjs().diff(dayjs(x), 'day'),
+  },
+  {
     // TODO update this with a pre-commit hook
     /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */

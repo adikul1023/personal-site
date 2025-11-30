@@ -1,0 +1,97 @@
+// Matrix Glitch Effect
+.matrix-glitch-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  animation: glitch-fade 0.5s ease-in-out;
+
+  @keyframes glitch-fade {
+    0%, 100% {
+      opacity: 0;
+    }
+    10%, 90% {
+      opacity: 1;
+    }
+  }
+}
+
+.matrix-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.12) 0px,
+    rgba(255, 255, 255, 0.12) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  mix-blend-mode: overlay;
+}
+
+.matrix-layer-1 {
+  animation: scan-lines 0.5s linear;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(200, 200, 200, 0.15) 0px,
+    transparent 2px
+  );
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.matrix-layer-2 {
+  animation: glitch-shift 0.5s steps(2, end);
+  opacity: 0.4;
+  background: rgba(100, 100, 100, 0.08);
+}
+
+.matrix-layer-3 {
+  animation: noise 0.5s steps(10);
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(150, 150, 150, 0.04) 50%,
+      rgba(200, 200, 200, 0.05) 100%
+    );
+}
+
+@keyframes scan-lines {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes glitch-shift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) skew(2deg);
+  }
+  50% {
+    transform: translateX(5px) skew(-2deg);
+  }
+  75% {
+    transform: translateX(-3px) skew(1deg);
+  }
+}
+
+@keyframes noise {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}

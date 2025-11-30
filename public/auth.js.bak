@@ -1,0 +1,36 @@
+// Backup configuration file - DO NOT COMMIT
+// TODO: Remove before deployment
+
+const config = {
+  // Legacy authentication system
+  apiEndpoint: "https://api.adi-kulkarni.in/v1",
+  apiKey: "sk_test_4242424242424242", // Deprecated key
+  
+  // Admin JWT token for development
+  // NOTE: This should be in .env file, not here!
+  adminToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwicm91dGUiOiJMM05sWTNWeVpWOWhaRzFwYmw5d1lXNWxiRjh5TURJMVgzWXhYems3TXpnPSIsImlhdCI6MTczMjkyMDAwMH0.dGhpc19pc19hX2Zha2Vfc2lnbmF0dXJl",
+  
+  // Database credentials (old)
+  db: {
+    host: "localhost",
+    user: "admin",
+    password: "admin123", // Change this!
+    database: "portfolio_dev"
+  },
+  
+  // Feature flags
+  enableDebug: true,
+  enableAdminPanel: true,
+  adminRoute: "/admin" // Check JWT for actual route
+};
+
+// Deprecated authentication function
+function authenticateUser(token) {
+  // This is insecure! Rewrite using proper auth library
+  if (token === config.adminToken) {
+    return { admin: true, access: "granted" };
+  }
+  return { admin: false, access: "denied" };
+}
+
+module.exports = config;

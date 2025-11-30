@@ -1,0 +1,103 @@
+// Konami Code Achievement
+.konami-achievement {
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  z-index: 10000;
+  animation: popFromRight 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), fadeOut 0.5s ease-in 4.5s forwards;
+}
+
+.achievement-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 215, 0, 0.3);
+  color: white;
+  min-width: 280px;
+}
+
+.achievement-icon {
+  font-size: 40px;
+  animation: starPulse 1s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px #ffd700);
+}
+
+.achievement-text {
+  flex: 1;
+}
+
+.achievement-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-subtitle {
+  font-size: 13px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+@keyframes popFromRight {
+  0% {
+    transform: translateX(120%) scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-10px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+}
+
+@keyframes starPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .konami-achievement {
+    top: 15px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .achievement-content {
+    min-width: auto;
+    padding: 12px 15px;
+  }
+
+  .achievement-icon {
+    font-size: 32px;
+  }
+
+  .achievement-title {
+    font-size: 14px;
+  }
+
+  .achievement-subtitle {
+    font-size: 12px;
+  }
+}

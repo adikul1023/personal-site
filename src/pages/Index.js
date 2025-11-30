@@ -7,7 +7,7 @@ const Index = () => (
   <Main
     description={
       "Adi Kulkarni's personal website. Student at VIT Bhopal University, "
-      + 'Persuing B.Tech in Cyber Security and Digital Forensics.'
+      + 'Pursuing B.Tech in Cyber Security and Digital Forensics.'
     }
   >
     <article className="post" id="index">
@@ -17,8 +17,9 @@ const Index = () => (
             <Link to="/">About this site</Link>
           </h2>
           <p>
-            A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
+            Hello! I&apos;m Adi Kulkarni, a student at VIT Bhopal University pursuing B.Tech in
+            Cyber Security and Digital Forensics. I&apos;m a passionate penetration tester who
+            enjoys creating security tools as a hobby.
           </p>
         </div>
       </header>
