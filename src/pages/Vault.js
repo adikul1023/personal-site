@@ -61,9 +61,11 @@ const Vault = () => {
     try {
       // Hash the flag before sending
       const flagHash = await hashFlag(FLAG);
-      
+
+      /* eslint-disable no-console */
       console.log('Submitting to:', APPS_SCRIPT_URL);
       console.log('Data:', { name: name.trim(), github: github.trim(), flagHash });
+      /* eslint-enable no-console */
 
       const response = await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
@@ -78,9 +80,11 @@ const Vault = () => {
         }),
       });
 
+      /* eslint-disable no-console */
       console.log('Response status:', response.status);
       const result = await response.text();
       console.log('Response:', result);
+      /* eslint-enable no-console */
 
       setSubmitted(true);
       setSubmitting(false);
