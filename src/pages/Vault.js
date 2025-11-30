@@ -12,8 +12,6 @@ const Vault = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const FLAG = 'FLAG{b4ckup_f1l3s_4r3_d4ng3r0us_4d1}';
-  // SHA-256 hash of the flag for server-side verification
-  const FLAG_HASH = '8f3d9e7c6b5a4d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e';
   const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx3fvtiGXlXjnlytnwbIbdKjJYFJFNyq_CWdoA5uW4zJ1efJDYf3KparekE5-MZ9IrM/exec';
 
   useEffect(() => {
@@ -72,7 +70,7 @@ const Vault = () => {
         body: JSON.stringify({
           name: name.trim(),
           github: github.trim(),
-          flagHash: flagHash,
+          flagHash,
           timestamp: new Date().toISOString(),
         }),
       });
