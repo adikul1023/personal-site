@@ -8,7 +8,7 @@ const HallOfFame = () => {
   // Replace this URL with your published Google Sheets JSON endpoint
   // After setting up Apps Script, you'll get a URL like:
   // https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
-  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbx3fvtiGXlXjnlytnwbIbdKjJYFJFNyq_CWdoA5uW4zJ1efJDYf3KparekE5-MZ9IrM/exec';
+  const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxkdhi03f_8-k1EfH4-BYoBxsQN-DDHeXAc45unCKKegL9wMzwGXGhkqSKTfe4Evq5V/exec';
 
   useEffect(() => {
     const fetchWinners = async () => {

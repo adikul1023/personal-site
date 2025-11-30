@@ -12,7 +12,7 @@ const Vault = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const FLAG = 'FLAG{b4ckup_f1l3s_4r3_d4ng3r0us_4d1}';
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx3fvtiGXlXjnlytnwbIbdKjJYFJFNyq_CWdoA5uW4zJ1efJDYf3KparekE5-MZ9IrM/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxkdhi03f_8-k1EfH4-BYoBxsQN-DDHeXAc45unCKKegL9wMzwGXGhkqSKTfe4Evq5V/exec';
 
   useEffect(() => {
     // Check for JWT token in localStorage
