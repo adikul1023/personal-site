@@ -27,7 +27,7 @@ const data = [
     title: 'FaceGuard',
     subtitle: 'Non-IR Camera Face Verification System',
     link: 'https://github.com/adikul1023/face-verification',
-    image: '/images/projects/secure_vibe.png',
+    image: '/images/projects/faceguard.png',
     date: '2025-05-15',
     desc:
       'FaceGuard is an advanced face verification system that uses standard non-IR cameras '
@@ -38,7 +38,7 @@ const data = [
     title: 'ZeroCall',
     subtitle: 'Zero Trust Secure Web Calling Platform',
     link: 'https://github.com/Secure-Calling-EPICS/Secure-Web-Calling',
-    image: '/images/projects/secure_vibe.png',
+    image: '/images/projects/zerovoice.png',
     date: '2025-06-01',
     desc:
       'ZeroCall is a secure web calling application built on Zero Trust architecture principles. '
