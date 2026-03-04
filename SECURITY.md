@@ -9,6 +9,14 @@ Since this is a personal website, only the latest version deployed from the main
 | Main Branch (Latest)   | :white_check_mark: |
 | Older commits | :x:                |
 
+## Security Updates
+
+### March 2026 - React CVE Mitigation
+- **Updated React to 19.2.4** from 18.3.1 to address recent CVE vulnerabilities
+- React and react-dom upgraded to latest stable versions
+- Project continues to use static site generation (no React Server Components)
+- Build process verified and working correctly with React 19
+
 ## Reporting a Vulnerability
 
 I take the security of this website seriously. If you have discovered a security vulnerability, please do not discuss it in the public issue tracker.
