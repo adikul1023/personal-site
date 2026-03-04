@@ -11,11 +11,13 @@ Since this is a personal website, only the latest version deployed from the main
 
 ## Security Updates
 
-### March 2026 - React CVE Mitigation
-- **Updated React to 19.2.4** from 18.3.1 to address recent CVE vulnerabilities
-- React and react-dom upgraded to latest stable versions
-- Project continues to use static site generation (no React Server Components)
-- Build process verified and working correctly with React 19
+### March 2026 - React Version Status
+- **Using React 18.3.1** - Latest stable version compatible with Create React App
+- React 19 caused compatibility issues and was rolled back
+- Project uses static site generation (no React Server Components)
+- **Not vulnerable to RSC-related CVEs** (CVE-2025-55184, CVE-2025-55183, React2Shell)
+  - These vulnerabilities only affect Next.js App Router and server-side RSC implementations
+  - This project uses client-side React with static generation
 
 ## Reporting a Vulnerability
 
